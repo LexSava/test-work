@@ -26,6 +26,7 @@ const Main: React.FC<InterfaceMain> = (props) => {
           name="name"
           onChange={enteredName}
           onInput={enteredName}
+          required
         />
 
         <input
@@ -34,12 +35,12 @@ const Main: React.FC<InterfaceMain> = (props) => {
           name="surname"
           onChange={enteredSurname}
           onInput={enteredSurname}
+          required
         />
 
         <button
           onClick={() => {
             User.openModalWindow();
-            console.log(`Здраствуйте: ${User.name + " " + User.surname}`);
           }}
         >
           Готово

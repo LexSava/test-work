@@ -10,7 +10,7 @@ const Modal: React.FC<InterfaceModal> = observer(() => {
       <div className="madalOverlay">
         <div className="modalWindow">
           <div className="modalBody">
-            {`Здраствуйте: ${User.name + " " + User.surname}`}
+            {`Здравствуйте, ${User.name + " " + User.surname}.`}
           </div>
           <div className="modalFooter">
             <button

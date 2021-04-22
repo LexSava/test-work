@@ -15,7 +15,9 @@ class User {
     console.log(this.surname);
   }
   openModalWindow() {
-    this.displayModalWindow = true;
+    if (this.surname.length !== 0 && this.name.length !== 0) {
+      this.displayModalWindow = true;
+    }
   }
   closeModalWindow() {
     this.displayModalWindow = false;
