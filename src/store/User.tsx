@@ -8,11 +8,9 @@ class User {
   }
   getName(enteredName: string) {
     this.name = enteredName;
-    console.log(this.name);
   }
   getSurname(enteredSurname: string) {
     this.surname = enteredSurname;
-    console.log(this.surname);
   }
   openModalWindow() {
     if (this.surname.length !== 0 && this.name.length !== 0) {
